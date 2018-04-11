@@ -1,0 +1,4 @@
+Array.map(
+  [ document.getElementById('tab-<%= @tab.id %>') ],
+  tab => tab.parentNode.removeChild(tab)
+);

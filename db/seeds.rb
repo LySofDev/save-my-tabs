@@ -5,3 +5,25 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+user = User.find_or_create_by(email: "mac.hdz@gmail.com") do |u|
+  u.password = "password"
+  u.password_confirmation = "password"
+end
+
+Tab.create([
+  {
+    title: "Facebook",
+    url: "https://facebook.com",
+    user: user
+  },
+  {
+    title: "Reddit",
+    url: "https://reddit.com",
+    user: user
+  },
+  {
+    title: "Twitter",
+    url: "https://twitter.com",
+    user: user
+  }
+])

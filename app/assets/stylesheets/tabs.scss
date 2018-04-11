@@ -1,0 +1,10 @@
+main#tabs-index {
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  li a {
+    display: block;
+  }
+}

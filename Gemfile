@@ -35,7 +35,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.0.0'
 # Use JQuery as Bootstrap dependency
 gem 'jquery-rails', '4.3.1'
-
+# Use Octicon icons
+gem 'octicons', '~> 5.3.0'
 # Use Devise for user authentication
 gem 'devise', '~> 4.4.3'
 
