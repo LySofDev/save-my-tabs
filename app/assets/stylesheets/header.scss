@@ -1,0 +1,21 @@
+header {
+  height: 10vh;
+  width: 100vw;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  a {
+    font-size: 1.5rem;
+    color: white;
+    display: block;
+    font-weight: 500;
+    &:hover {
+      color: white;
+    }
+    &:last-of-type {
+      font-weight: 300;
+    }
+  }
+}
