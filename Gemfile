@@ -36,6 +36,9 @@ gem 'bootstrap', '~> 4.0.0'
 # Use JQuery as Bootstrap dependency
 gem 'jquery-rails', '4.3.1'
 
+# Use Devise for user authentication
+gem 'devise', '~> 4.4.3'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
