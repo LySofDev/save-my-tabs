@@ -7,4 +7,18 @@ main#tabs-index {
   li a {
     display: block;
   }
+  form {
+    padding: 1rem;
+  }
+  form .form-control {
+    margin-bottom: 1rem;
+  }
+  .hideable {
+    height: auto;
+    overflow: hidden;
+  }
+  .hidden {
+    height: 0;
+    display: none;
+  }
 }

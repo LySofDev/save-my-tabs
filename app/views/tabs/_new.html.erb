@@ -1,0 +1,9 @@
+<%= form_for @tab, remote: true, url: { controller: 'tabs', action: 'create' } do |f| %>
+  <button id="new-tab-button" class="btn btn-primary btn-block hideable">Save Tab</button>
+  <div id="new-tab-form" class="hideable hidden">
+    <%= f.text_field :url, placeholder: 'URL', class: "form-control" %>
+    <%= f.text_field :title, placeholder: 'Title (Optional)', class: "form-control" %>
+    <%= f.submit "Save", class: "btn btn-primary btn-block" %>
+    <button id="close-new-tab" class="btn btn-danger btn-block">Close</button>
+  </div>
+<% end %>

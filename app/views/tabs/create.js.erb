@@ -1,0 +1,9 @@
+Array.map(
+  [ document.querySelector('main#tabs-index ul.list-group') ],
+  ul => {
+    let parser = new DOMParser();
+    let rawEl = "<%= j(render(partial: 'tabs/tab', locals: { tab: @tab })) %>";
+    let li = parser.parseFromString(rawEl, "text/html").activeElement;
+    ul.appendChild(li);
+  }
+);

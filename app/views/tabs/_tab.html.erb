@@ -1,6 +1,8 @@
-<li class="list-group-item" id="tab-<%= tab.id %>">
-  <%= link_to tab.title_or_url, tab.url, target: "_blank" %>
-  <%= link_to tab_path(tab), method: 'DELETE', remote: true do %>
-    <%= octicon('x', size: 14) %>
-  <% end %>
-</li>
+<% unless @tab.id.nil? %>
+  <li class="list-group-item" id="tab-<%= tab.id %>">
+    <%= link_to tab.title_or_url, tab.url, target: "_blank" %>
+    <%= link_to tab_path(tab), method: 'DELETE', remote: true do %>
+      <%= octicon('x', size: 14) %>
+    <% end %>
+  </li>
+<% end %>
